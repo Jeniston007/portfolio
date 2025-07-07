@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jeniston | Flutter Developer</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Loading Screen -->
+  <div id="loading-screen">
+    <div class="loader">
+      <div class="flutter-logo">
+        <i class="fab fa-flutter"></i>
+      </div>
+      <div class="loading-text">Loading Portfolio...</div>
+    </div>
+  </div>
+
+  <!-- Cursor Trail -->
+  <div id="cursor-trail"></div>
+
+  <!-- Floating Particles -->
+  <div id="particles-container"></div>
+
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <div class="nav-logo">
+        <span class="logo-text">Jeniston</span>
+        <div class="logo-dot"></div>
+      </div>
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="#home" class="nav-link">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#education" class="nav-link">Education</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero-section">
+    <div class="hero-background">
+      <div class="gradient-orb orb-1"></div>
+      <div class="gradient-orb orb-2"></div>
+      <div class="gradient-orb orb-3"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-text">
+        <h1 class="hero-title">
+          <span class="title-line">Hello, I'm</span>
+          <span class="title-main">Selva Sahayam Jeniston</span>
+          <span class="title-subtitle">Flutter Developer & App Architect</span>
+        </h1>
+        <p class="hero-description">
+          Crafting beautiful, scalable cross-platform applications with passion and precision. 
+          Let's build something amazing together.
+        </p>
+        <div class="hero-buttons">
+          <a href="#projects" class="btn btn-primary">
+            <span>View My Work</span>
+            <i class="fas fa-arrow-right"></i>
+          </a>
+          <a href="Resume.pdf" class="btn btn-secondary" target="_blank">
+            <i class="fas fa-download"></i>
+            <span>Download Resume</span>
+          </a>
+        </div>
+      </div>
+      <div class="hero-image">
+        <div class="profile-container">
+          <div class="profile-ring ring-1"></div>
+          <div class="profile-ring ring-2"></div>
+          <div class="profile-ring ring-3"></div>
+          <div class="profile-avatar">
+            <img src="img/image.jpeg" alt="Selva Sahayam Jeniston" class="avatar-image">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <div class="scroll-mouse">
+        <div class="scroll-wheel"></div>
+      </div>
+      <span>Scroll to explore</span>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about-section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">About Me</h2>
+        <p class="section-subtitle">Passionate developer with a love for innovation</p>
+      </div>
+      <div class="about-content">
+        <div class="about-text">
+          <div class="about-card">
+            <div class="card-icon">
+              <i class="fas fa-code"></i>
+            </div>
+            <h3>Who I Am</h3>
+            <p>
+              I'm <strong>Selva Sahayam Jeniston</strong>, a passionate Flutter developer focused on building 
+              scalable and high-performance cross-platform applications. Currently an intern at 
+              <strong>Zenthink Technologies</strong>, I love solving problems and continuously improving my skills.
+            </p>
+          </div>
+          <div class="about-card">
+            <div class="card-icon">
+              <i class="fas fa-heart"></i>
+            </div>
+            <h3>What I Love</h3>
+            <p>
+              I thrive on collaboration, clean architecture, and user-focused development. 
+              Creating intuitive mobile experiences that make a difference in people's lives drives my passion.
+            </p>
+          </div>
+        </div>
+        <!-- Background icons -->
+        <div class="background-icons">
+          <i class="fab fa-github" data-icon="github"></i>
+          <i class="fas fa-code-branch" data-icon="git"></i>
+          <i class="fab fa-flutter" data-icon="flutter"></i>
+          <i class="fab fa-html5" data-icon="html"></i>
+          <i class="fab fa-css3-alt" data-icon="css"></i>
+          <i class="fab fa-js" data-icon="js"></i>
+          <i class="fab fa-dart" data-icon="dart"></i>
+          <i class="fas fa-database" data-icon="firebase"></i>
+          <i class="fas fa-robot" data-icon="chatgpt"></i>
+          <i class="fas fa-brain" data-icon="grok"></i>
+          <i class="fas fa-user-secret" data-icon="claude"></i>
+          <i class="fas fa-code" data-icon="vs"></i>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="skills-section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Skills & Expertise</h2>
+        <p class="section-subtitle">Technologies I work with</p>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-category">
+          <div class="category-header">
+            <div class="category-icon">
+              <i class="fas fa-code"></i>
+            </div>
+            <h3>Programming Languages</h3>
+          </div>
+          <div class="skills-list">
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">Dart</span>
+                <span class="skill-level">90%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" data-width="90%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">Java</span>
+                <span class="skill-level">85%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" data-width="85%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">C</span>
+                <span class="skill-level">80%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" data-width="80%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="skill-category">
+          <div class="category-header">
+            <div class="category-icon">
+              <i class="fas fa-mobile-alt"></i>
+            </div>
+            <h3>Frameworks & Tools</h3>
+          </div>
+          <div class="skills-list">
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">Flutter</span>
+                <span class="skill-level">92%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" data-width="92%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">Firebase</span>
+                <span class="skill-level">88%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" data-width="88%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">Android Studio</span>
+                <span class="skill-level">85%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" data-width="85%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="skill-category">
+          <div class="category-header">
+            <div class="category-icon">
+              <i class="fas fa-globe"></i>
+            </div>
+            <h3>Web & Database</h3>
+          </div>
+          <div class="skills-list">
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">HTML/CSS</span>
+                <span class="skill-level">85%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" data-width="85%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">SQL</span>
+                <span class="skill-level">80%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" data-width="80%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">Git/GitHub</span>
+                <span class="skill-level">90%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" data-width="90%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="projects-section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Featured Projects</h2>
+      </div>
+      <div class="projects-grid">
+        <div class="project-card">
+          <div class="project-image">
+            <div class="project-overlay">
+              <div class="project-links">
+                <a href="https://github.com/Jeniston007/FACE_RECOGNITION" target="_blank" class="project-link">
+                  <i class="fab fa-github"></i>
+                </a>
+                <a href="https://jeniston007.github.io/FACE_RECOGNITION" target="_blank" class="project-link">
+                  <i class="fas fa-external-link-alt"></i>
+                </a>
+              </div>
+            </div>
+            <div class="project-placeholder">
+              <i class="fas fa-user-check"></i>
+            </div>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">Efficient Attendance Tracking System</h3>
+            <p class="project-description">
+              A real-time attendance system using facial recognition to improve accuracy and eliminate manual processes.
+            </p>
+            <div class="project-tech">
+              <span class="tech-tag">Flutter</span>
+              <span class="tech-tag">Firebase</span>
+              <span class="tech-tag">Python</span>
+            </div>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-image">
+            <div class="project-overlay">
+              <div class="project-links">
+                <a href="https://github.com/Jeniston007/Registration-page" target="_blank" class="project-link">
+                  <i class="fab fa-github"></i>
+                </a>
+                <a href="https://jeniston007.github.io/Registration-page" target="_blank" class="project-link">
+                  <i class="fas fa-external-link-alt"></i>
+                </a>
+              </div>
+            </div>
+            <div class="project-placeholder">
+              <i class="fas fa-user-plus"></i>
+            </div>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">Registration Page</h3>
+            <p class="project-description">
+              A Flutter registration app integrated with Firebase Authentication and Firestore for user data handling.
+            </p>
+            <div class="project-tech">
+              <span class="tech-tag">Flutter</span>
+              <span class="tech-tag">Firebase</span>
+              <span class="tech-tag">Firestore</span>
+            </div>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-image">
+            <div class="project-overlay">
+              <div class="project-links">
+                <a href="https://github.com/Jeniston007/Organic-Prediction" target="_blank" class="project-link">
+                  <i class="fab fa-github"></i>
+                </a>
+                <a href="https://jeniston007.github.io/Organic-Prediction" target="_blank" class="project-link">
+                  <i class="fas fa-external-link-alt"></i>
+                </a>
+              </div>
+            </div>
+            <div class="project-placeholder">
+              <i class="fas fa-leaf"></i>
+            </div>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">Organic Prediction</h3>
+            <p class="project-description">
+              A machine learning-powered crop prediction system that recommends optimal crops based on environmental factors like soil, weather, and location.
+            </p>
+            <div class="project-tech">
+              <span class="tech-tag">Flutter</span>
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">TensorFlow</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="see-more">
+        <a href="https://github.com/Jeniston007" target="_blank" class="btn btn-primary">
+          <span>See More Projects</span>
+          <i class="fas fa-arrow-right"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section id="experience" class="experience-section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Experience</h2>
+        <p class="section-subtitle">My professional journey</p>
+      </div>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <h3>Flutter Development Intern</h3>
+              <span class="timeline-company">Zenthink Technologies</span>
+              <span class="timeline-date">Present</span>
+            </div>
+            <ul class="timeline-tasks">
+              <li>Contributed to the design and development of cross-platform mobile applications</li>
+              <li>Focused on clean architecture, reusable code, and scalable app features</li>
+              <li>Gained real-world experience with Flutter, Firebase, and team collaboration</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education Section -->
+  <section id="education" class="education-section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Education</h2>
+        <p class="section-subtitle">My academic background</p>
+      </div>
+      <div class="education-grid">
+        <div class="education-card">
+          <div class="education-icon">
+            <i class="fas fa-graduation-cap"></i>
+          </div>
+          <div class="education-content">
+            <h3>MCA in Computer Applications</h3>
+            <p class="education-school">Kongu Engineering College</p>
+            <p class="education-details">
+              <span class="education-year">Ongoing</span>
+              <span class="education-gpa">CGPA: 8.13</span>
+            </p>
+          </div>
+        </div>
+        <div class="education-card">
+          <div class="education-icon">
+            <i class="fas fa-book"></i>
+          </div>
+          <div class="education-content">
+            <h3>BA in English</h3>
+            <p class="education-school">Nazareth Margoschis College</p>
+            <p class="education-details">
+              <span class="education-year">2023</span>
+              <span class="education-gpa">CGPA: 6.94</span>
+            </p>
+          </div>
+        </div>
+        <div class="education-card">
+          <div class="education-icon">
+            <i class="fas fa-school"></i>
+          </div>
+          <div class="education-content">
+            <h3>Higher Secondary (HSC)</h3>
+            <p class="education-school">St. Michael's Hr. Sec. School</p>
+            <p class="education-details">
+              <span class="education-year">2020</span>
+              <span class="education-gpa">65.33%</span>
+            </p>
+          </div>
+        </div>
+        <div class="education-card">
+          <div class="education-icon">
+            <i class="fas fa-certificate"></i>
+          </div>
+          <div class="education-content">
+            <h3>Secondary (SSLC)</h3>
+            <p class="education-school">St. Michael's Hr. Sec. School</p>
+            <p class="education-details">
+              <span class="education-year">2018</span>
+              <span class="education-gpa">79.2%</span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact-section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Get In Touch</h2>
+        <p class="section-subtitle">Let's work together or just say hi!</p>
+      </div>
+      <div class="contact-content">
+        <div class="contact-form">
+          <form id="contact-form">
+            <div class="form-group">
+              <input type="text" id="name" name="name" required>
+              <label for="name">Your Name</label>
+            </div>
+            <div class="form-group">
+              <input type="email" id="email" name="email" required>
+              <label for="email">Your Email</label>
+            </div>
+            <div class="form-group">
+              <input type="text" id="subject" name="subject" required>
+              <label for="subject">Subject</label>
+            </div>
+            <div class="form-group">
+              <textarea id="message" name="message" rows="5" required></textarea>
+              <label for="message">Your Message</label>
+            </div>
+            <button type="submit" class="btn btn-primary">
+              <span>Send Message</span>
+              <i class="fas fa-paper-plane"></i>
+            </button>
+          </form>
+        </div>
+        <div class="contact-info">
+          <div class="contact-item">
+            <div class="contact-icon">
+              <i class="fas fa-envelope"></i>
+            </div>
+            <div class="contact-details">
+              <h3>Email</h3>
+              <p>selvasahayamjeniston1@gmail.com</p>
+            </div>
+          </div>
+          <div class="social-links">
+            <a href="https://github.com/Jeniston007" target="_blank" class="social-link">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="https://linkedin.com/in/your-linkedin-username" target="_blank" class="social-link">
+              <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://leetcode.com/u/selvasahayamjeniston/" target="_blank" class="social-link">
+              <i class="fas fa-code"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <p>© 2025 Selva Sahayam Jeniston. All rights reserved.</p>
+        <div class="footer-links">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll to Top Button -->
+  <button id="scroll-top" class="scroll-top">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
